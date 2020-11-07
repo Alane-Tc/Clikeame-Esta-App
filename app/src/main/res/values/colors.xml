@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#495057</color>
+    <color name="colorPrimaryDark">#343a40</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="boton">#E71D36</color>
+    <color name="fondo">#FFBA08</color>
+    <color name="fondoInicio">#e9ecef</color>
+    <!---A8DADC Celeste-->
+</resources>
