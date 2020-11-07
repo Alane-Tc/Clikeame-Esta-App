@@ -28,11 +28,13 @@ class MainActivity : AppCompatActivity() {
         }
 
         button_medium.setOnClickListener(){
-            Toast.makeText(this, "App en construcción =(", Toast.LENGTH_SHORT).show()
+            val intent: Intent = Intent(this, Medium::class.java);
+            startActivity(intent);
         }
 
         button_difficult.setOnClickListener(){
-            Toast.makeText(this, "App en construcción =(", Toast.LENGTH_SHORT).show()
+            val intent: Intent = Intent(this, Difficult::class.java);
+            startActivity(intent);
         }
 
 

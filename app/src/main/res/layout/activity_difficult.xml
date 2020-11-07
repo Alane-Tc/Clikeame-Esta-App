@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".Difficult">
+
+    <ImageView
+        android:id="@+id/Imagen_Logo"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:background="@drawable/mensaje"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_counterDifficult"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:text="Contador de Clicks"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:background="@color/boton"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/show_clicks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Has Dado Click: 0 Veces"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="330dp"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nivel Difícil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="370dp"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"
+        />
+
+
+</RelativeLayout>
