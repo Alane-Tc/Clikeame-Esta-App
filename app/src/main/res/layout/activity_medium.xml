@@ -15,7 +15,7 @@
         android:layout_centerHorizontal="true"/>
 
     <Button
-        android:id="@+id/btn_counterMedium"
+        android:id="@+id/btn_counter_test"
         android:layout_width="220dp"
         android:layout_height="50dp"
         android:text="Contador de Clicks"
@@ -23,10 +23,10 @@
         android:layout_marginTop="250dp"
         android:background="@color/boton"
         android:textSize="20sp"
-        />
+        android:enabled="true"/>
 
     <TextView
-        android:id="@+id/show_clicks_medium"
+        android:id="@+id/show_clicks_test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Has Dado Click: 0 Veces"
@@ -39,11 +39,30 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nivel Medio"
+        android:text="Nivel Fácil"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="370dp"
         android:textSize="25sp"
         android:fontFamily="sans-serif"
+        />
+
+    <TextView
+        android:id="@+id/textRandom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif"
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imgRandomEasy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="425dp"
         />
 
 
