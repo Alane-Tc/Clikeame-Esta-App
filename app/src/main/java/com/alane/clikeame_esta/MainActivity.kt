@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         button_difficult=findViewById(R.id.btn_dificil)
 
         button_easy.setOnClickListener(){
-            val intent: Intent = Intent(this, Easy::class.java);
+            val intent: Intent = Intent(this, Test::class.java);
             startActivity(intent);
         }
 
