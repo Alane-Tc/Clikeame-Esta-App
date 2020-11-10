@@ -12,7 +12,6 @@
         <activity android:name=".Test"></activity>
         <activity android:name=".Difficult" />
         <activity android:name=".Medium" />
-        <activity android:name=".Easy" />
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait"
