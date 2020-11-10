@@ -57,5 +57,13 @@
         android:fontFamily="sans-serif"
         />
 
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imgRandomEasy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="425dp"
+         />
+
 
 </RelativeLayout>
