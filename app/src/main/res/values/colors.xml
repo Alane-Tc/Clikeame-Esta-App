@@ -6,5 +6,7 @@
     <color name="boton">#E71D36</color>
     <color name="fondo">#FFBA08</color>
     <color name="fondoInicio">#e9ecef</color>
+    <color name="fondoReset">#2a9d8f</color>
+    <color name="fondoOver">#ef476f</color>
     <!---A8DADC Celeste-->
 </resources>

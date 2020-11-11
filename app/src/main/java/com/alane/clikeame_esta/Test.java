@@ -3,6 +3,7 @@ package com.alane.clikeame_esta;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -25,12 +26,16 @@ public class Test extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
         Button boton_counter = (Button) findViewById(R.id.btn_counter_test);
+        Button buttonReset = (Button) findViewById(R.id.btn_counter_reset_Test);
+        Button buttonOver = (Button) findViewById(R.id.btn_counter_over_Test);
         boton_counter.setOnClickListener(this::onClick);
+        buttonReset.setOnClickListener(this::resetGame);
+        buttonOver.setOnClickListener(this::gameOver);
     }
 
     @SuppressLint("SetTextI18n")
     public void onClick(View view){
-        counter ++;
+        initCouter();
         int valorDado = (int) Math.floor(Math.random()*20+1);
         int number = (int) Math.floor(Math.random()*answer.length);
 
@@ -44,7 +49,8 @@ public class Test extends AppCompatActivity {
         if (valorDado == 5){
             buttonColor();
             texto_random.setText(answer[(int) Math.floor(Math.random()*answer.length)]);
-
+            buttonReset();
+            buttonOver();
         }
 
         if (counter ==50){
@@ -54,6 +60,35 @@ public class Test extends AppCompatActivity {
         }
 
     }
+
+    private void buttonOver(){
+        Button buttonOver = (Button) findViewById(R.id.btn_counter_over_Test);
+        buttonOver.setVisibility(View.VISIBLE);
+        buttonOver.setEnabled(true);
+    }
+
+    private void buttonReset(){
+        Button buttonReset = (Button) findViewById(R.id.btn_counter_reset_Test);
+        buttonReset.setVisibility(View.VISIBLE);
+        buttonReset.setEnabled(true);
+    }
+
+    private void resetGame(View view){
+        Toast.makeText(this, "Reiniciaste el juego", Toast.LENGTH_SHORT).show();
+        Intent intent= new Intent(Test.this, Test.class);
+        startActivity(intent);
+    }
+
+    private void gameOver(View view){
+        Intent intent= new Intent(view.getContext(), MainActivity.class);
+        //startActivityForResult(intent, 0);
+        startActivity(intent);
+    }
+
+    private void initCouter(){
+        counter ++;
+    }
+
     private void buttonColor(){
         Button boton_counter = (Button) findViewById(R.id.btn_counter_test);
         boton_counter.setEnabled(false);

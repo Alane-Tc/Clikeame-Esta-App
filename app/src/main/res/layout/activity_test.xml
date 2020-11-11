@@ -52,9 +52,35 @@
         android:layout_height="wrap_content"
         android:text=""
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="440dp"
         android:textSize="25sp"
         android:fontFamily="sans-serif"
+        />
+
+    <Button
+        android:id="@+id/btn_counter_reset_Test"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:text="Jugar de nuevo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="525dp"
+        android:background="@color/fondoReset"
+        android:textSize="20sp"
+        android:enabled="false"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:id="@+id/btn_counter_over_Test"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:text="Rendirse"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="610dp"
+        android:background="@color/fondoOver"
+        android:textSize="20sp"
+        android:enabled="false"
+        android:visibility="invisible"
         />
 
     <ImageView

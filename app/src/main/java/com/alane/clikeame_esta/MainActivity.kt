@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var button_difficult : Button
     override fun onCreate(savedInstanceState: Bundle?) {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
-        Thread.sleep(2000)
+        //Thread.sleep(2000)
         setTheme(R.style.AppTheme)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
